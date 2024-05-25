@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial;
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 24em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 40px;
+}
+#profileimg img {
+  border-radius: 50%;
+  width: 5.5em;
+  /* margin-top: 5px; */
+  margin-bottom: 15px;
+}
+#name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 1.5em;
+}
+#location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 0.9em;
+}
+#description {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0, 0%, 85%);
+  font-weight: 300;
+}
+.links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18em;
+  height: 45px;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  /* text-align: center; */
+  margin-top: 15px;
+}
+.link:hover {
+  cursor: pointer;
+  background-color: hsl(75, 94%, 57%);
+}
+.link:hover .link-text {
+  /* Increased specificity by targeting class */
+  color: black;
+}
+.link a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+/* .link a:hover {
+  color: black;
+} */
